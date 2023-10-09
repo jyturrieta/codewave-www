@@ -9,7 +9,7 @@ const theme = createTheme({
             main: "#00a4ca"
         },
         relaxed: {
-            main: "#57a52d"
+            main: "#57a52d"  
         },
         black: {
             main: "#000000"
@@ -18,8 +18,11 @@ const theme = createTheme({
             main: "#ffffff"
         },
         grey: {
-            main: "#777779"
+            main: "#382122"
         }
+    },
+    typography: {
+        fontFamily: "Montserrat",
     }
 });
 
