@@ -1,9 +1,13 @@
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 function App() {
   return (
     <div className="App">
-      <Box sx={{ bgcolor: 'primary.main', height: '100vh' }}> Hola </Box>
+      <Box sx={{ color:"secondary"}}>
+        <Typography variant="h1" color="edit"> 
+          Hello World!
+        </Typography>
+      </Box>
     </div>
   );
 }
