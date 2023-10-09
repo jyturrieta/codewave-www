@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <Box sx={{ color:"secondary"}}>
-        <Typography variant="h1" color="edit"> 
+        <Typography variant="h1" color="primary"> 
           Hello World!
         </Typography>
       </Box>
