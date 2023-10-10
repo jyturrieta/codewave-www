@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import Footer from "./components/Footer";
+import Nosotros from "./components/Nosotros";
 
 import ContactForm from "./components/ContactForm.jsx"
 
@@ -13,6 +14,7 @@ function App() {
         </Typography>
         <Footer/>
         <ContactForm/>
+        <Nosotros />
       </Box>
     </div>
   );
