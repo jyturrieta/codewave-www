@@ -29,8 +29,8 @@ export default function ContactForm() {
           </Typography>
         </Box>
       </Box>
-      <Box>
-        <Grid container spacing={2} justifyContent="center">
+      <Box display="grid" justifyContent="center" mt="1rem">
+        <Grid sx={{maxWidth:"md"}} container spacing={2}>
             <Grid item xs={12} sm={6} md={6}>
                 <TextField
                  label="Nombre"
@@ -82,15 +82,14 @@ export default function ContactForm() {
                     multiline
                 />
             </Grid>
-            <Grid item xs={12} sm={12} md={12}>
+            <Grid item xs={12} sm={12} md={12} display="grid" justifyContent="center">
                 <Button
-                    fullWidth
                     type="submit"
                     label="Enviar"
                     color="relaxed"
                     onClick={handleSubmit}
                     variant="contained"
-
+                    size="large"
                 >Enviar</Button>
             </Grid>
         </Grid>
