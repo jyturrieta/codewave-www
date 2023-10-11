@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
         <Typography variant="h1" color="relaxed.main"> 
           Hello World!
         </Typography>
+        <Footer/>
       </Box>
     </div>
   );
