@@ -28,21 +28,21 @@ const Footer = () => {
             alt="logoBlanco"
           />
           <Box sx={{margin:"2rem", display:"flex", flexDirection:"column"}}>
-            <Box sx={{ display: "flex", alignItems: "center" }}>
+            <Box sx={{ display: "flex", alignItems: "center", flexDirection:{xs:"column", sm:"row"} }}>
               <Email sx={{ color: "white.main", fontSize: "3rem" }} />
               <Typography variant="h6" align="center" color="white.main">
                 
                 CODEWAVE@CODEWAVE.COM.AR
               </Typography>
             </Box>
-            <Box sx={{ display: "flex", alignItems: "center" }}>
+            <Box sx={{ display: "flex", alignItems: "center", flexDirection:{xs:"column", sm:"row"} }}>
               <Phone sx={{ color: "white.main", fontSize: "3rem" }} />
               <Typography variant="h6" align="center" color="white.main">
                 
                 +54 9 11 1234-5678
               </Typography>
             </Box>
-            <Box sx={{ display: "flex", alignItems: "center" }}>
+            <Box sx={{ display: "flex", alignItems: "center", flexDirection:{xs:"column", sm:"row"} }}>
               <Place sx={{ color: "white.main", fontSize: "3rem" }} />
               <Typography variant="h6" align="center" color="white.main">
                 
