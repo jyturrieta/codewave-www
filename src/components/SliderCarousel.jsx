@@ -3,7 +3,7 @@ import imagen1 from "../assets/1.jpg";
 import imagen2 from "../assets/2.png";
 import imagen3 from "../assets/3.jpeg"
 import Carousel from 'react-material-ui-carousel';
-import { Paper, Box } from '@mui/material';
+import { Box } from '@mui/material';
 
 
 const items = [
@@ -40,6 +40,7 @@ const SliderCarousel = () => {
             animation="fade"
             navButtonsAlwaysVisible={true}
             indicators={true}
+            duration={700}
                      
             >
                 {
@@ -49,8 +50,6 @@ const SliderCarousel = () => {
         </Box>
         </>
     );
-
-
 }
 
 export default SliderCarousel;
