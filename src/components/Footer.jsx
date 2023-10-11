@@ -6,9 +6,15 @@ import {
   Facebook,
   Instagram,
   Twitter,
+  LinkedIn,
   Place
 } from "@mui/icons-material";
 import logoBlanco from "../assets/codewaveBlanco.png";
+
+function getYear() {
+    return new Date().getFullYear();
+}
+
 
 const Footer = () => {
   return (
@@ -44,6 +50,19 @@ const Footer = () => {
               </Typography>
             </Box>
           </Box>
+        </Box>
+      </Box>
+      <Box sx={{display: "flex", justifyContent:"space-between", alignItems:"center", margin:"1rem"}}>
+        <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <Typography variant="body1" align="center">
+          © CODEWAVE {getYear()}
+          </Typography>
+        </Box>
+        <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <Facebook sx={{  fontSize: "4rem" }} />
+          <Instagram sx={{ fontSize: "4rem" }} />
+          <Twitter sx={{fontSize: "4rem" }} />
+        <LinkedIn sx={{ fontSize: "4rem" }} />
         </Box>
       </Box>
     </>
