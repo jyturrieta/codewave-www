@@ -41,6 +41,7 @@ const SliderCarousel = () => {
             navButtonsAlwaysVisible={true}
             indicators={true}
             duration={700}
+            sx={{display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}
                      
             >
                 {
