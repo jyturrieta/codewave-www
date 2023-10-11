@@ -14,9 +14,10 @@ function App() {
         <Typography variant="h1" color="relaxed.main"> 
           Hello World!
         </Typography>
-        <Footer/>
-        <ContactForm/>
         <Nosotros />
+        <ContactForm/>
+        <Footer/>
+        
       </Box>
     </div>
   );
