@@ -17,7 +17,8 @@ export default function ContactForm() {
 
   return (
     <>
-      <Box bgcolor="primary.main" sx={{display:"flex", justifyContent: "center", flexDirection:"column"}}>
+    <Box bgcolor="primary.main">
+      <Box sx={{display:"flex", justifyContent: "center", flexDirection:"column"}}>
         <Box>
           <Typography variant="h4" align="center" color="white.main">
             CONTÁCTANOS
@@ -29,8 +30,8 @@ export default function ContactForm() {
           </Typography>
         </Box>
       </Box>
-      <Box display="grid" justifyContent="center" mt="1rem">
-        <Grid sx={{maxWidth:"md"}} container spacing={2}>
+      <Box display="grid" justifyContent="center" mt="1rem" >
+        <Grid sx={{maxWidth:"md"}} container spacing={2} >
             <Grid item xs={12} sm={6} md={6}>
                 <TextField
                  label="Nombre"
@@ -40,6 +41,7 @@ export default function ContactForm() {
                     value={nombre}
                     onChange={(e) => setNombre(e.target.value)}
                     required
+                    sx={{background:"white"}}
                 />
             </Grid>
             <Grid item xs={12} sm={6} md={6}>
@@ -51,6 +53,7 @@ export default function ContactForm() {
                     value={empresa}
                     onChange={(e) => setEmpresa(e.target.value)}
                     required
+                    sx={{background:"white"}}
                 />
             </Grid>
             <Grid item xs={12} sm={6} md={6}>
@@ -62,6 +65,7 @@ export default function ContactForm() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
+                    sx={{background:"white"}}
                 />
             </Grid>
             <Grid item xs={12} sm={6} md={6}>
@@ -72,18 +76,20 @@ export default function ContactForm() {
                     type="text"
                     value={telefono}
                     onChange={(e) => setTelefono(e.target.value)}
+                    sx={{background:"white"}}
                 />
             </Grid>
             <Grid item xs={12} sm={12} md={12}>
                 <TextField
                  label="Mensaje"
-                    variant="outlined"
+                    rows={4}
                     fullWidth
                     type="text"
                     value={mensaje}
                     onChange={(e) => setMensaje(e.target.value)}
                     multiline
                     required
+                    sx={{background:"white"}}
                 />
             </Grid>
             <Grid item xs={12} sm={12} md={12} display="grid" justifyContent="center">
@@ -94,10 +100,12 @@ export default function ContactForm() {
                     onClick={handleSubmit}
                     variant="contained"
                     size="large"
+                    sx={{marginBottom:4}}
                 >Enviar</Button>
             </Grid>
-        </Grid>
+          </Grid>
         </Box>
+      </Box>
     </>
   );
 }
