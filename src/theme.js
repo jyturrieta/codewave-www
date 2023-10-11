@@ -11,7 +11,8 @@ const theme = createTheme({
             main: "#00a4ca"
         },
         relaxed: {
-            main: "#57a52d"  
+            main: "#57a52d",
+            contrastText:"#ffffff"
         },
         black: {
             main: "#000000"

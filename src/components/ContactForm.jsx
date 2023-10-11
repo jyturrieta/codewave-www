@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, TextField, Typography } from "@mui/material";
-import { Container, Grid } from "@mui/material";
-import { Button, FormControl } from "@mui/material";
+import { Grid } from "@mui/material";
+import { Button } from "@mui/material";
 import { useState } from "react";
 
 export default function ContactForm() {
@@ -39,6 +39,7 @@ export default function ContactForm() {
                     type="text"
                     value={nombre}
                     onChange={(e) => setNombre(e.target.value)}
+                    required
                 />
             </Grid>
             <Grid item xs={12} sm={6} md={6}>
@@ -49,6 +50,7 @@ export default function ContactForm() {
                     type="text"
                     value={empresa}
                     onChange={(e) => setEmpresa(e.target.value)}
+                    required
                 />
             </Grid>
             <Grid item xs={12} sm={6} md={6}>
@@ -59,6 +61,7 @@ export default function ContactForm() {
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                    required
                 />
             </Grid>
             <Grid item xs={12} sm={6} md={6}>
@@ -80,6 +83,7 @@ export default function ContactForm() {
                     value={mensaje}
                     onChange={(e) => setMensaje(e.target.value)}
                     multiline
+                    required
                 />
             </Grid>
             <Grid item xs={12} sm={12} md={12} display="grid" justifyContent="center">

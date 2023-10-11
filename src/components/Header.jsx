@@ -10,6 +10,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import logo from "../assets/logo.png";
 
+
 const pages = ['Inicio', 'Nosotros', 'Servicios', 'Portfolio', 'Contacto'];
 
 function Header() {
@@ -23,8 +24,10 @@ function Header() {
     setAnchorElNav(null);
   };
 
+  
+
   return (
-    <AppBar position="static">
+    <AppBar position="fixed" color="primary">
       <Container maxWidth="xl">
           <Box sx={{ //PANTALLA GRANDE
                 mr: 2,
