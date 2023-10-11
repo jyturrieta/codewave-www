@@ -27,7 +27,7 @@ function Header() {
   
 
   return (
-    <AppBar position="fixed" color="primary">
+    <AppBar position="static" color="primary">
       <Container maxWidth="xl">
           <Box sx={{ //PANTALLA GRANDE
                 mr: 2,
