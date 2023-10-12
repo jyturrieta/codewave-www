@@ -35,48 +35,52 @@ export default function ContactForm() {
             <Grid item xs={12} sm={6} md={6}>
                 <TextField
                  label="Nombre"
-                    variant="outlined"
+                    variant="filled"
                     fullWidth
                     type="text"
                     value={nombre}
                     onChange={(e) => setNombre(e.target.value)}
                     required
+                    color="relaxed"
                     sx={{background:"white"}}
                 />
             </Grid>
             <Grid item xs={12} sm={6} md={6}>
                 <TextField
                  label="Empresa"
-                    variant="outlined"
+                    variant="filled"
                     fullWidth
                     type="text"
                     value={empresa}
                     onChange={(e) => setEmpresa(e.target.value)}
                     required
+                    color="relaxed"
                     sx={{background:"white"}}
                 />
             </Grid>
             <Grid item xs={12} sm={6} md={6}>
                 <TextField
                  label="Email"
-                    variant="outlined"
+                    variant="filled"
                     fullWidth
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
+                    color="relaxed"
                     sx={{background:"white"}}
                 />
             </Grid>
             <Grid item xs={12} sm={6} md={6}>
                 <TextField
                  label="Telefono"
-                    variant="outlined"
+                    variant="filled"
                     fullWidth
                     type="text"
                     value={telefono}
                     onChange={(e) => setTelefono(e.target.value)}
                     sx={{background:"white"}}
+                    color="relaxed"
                 />
             </Grid>
             <Grid item xs={12} sm={12} md={12}>
@@ -89,7 +93,9 @@ export default function ContactForm() {
                     onChange={(e) => setMensaje(e.target.value)}
                     multiline
                     required
+                    variant="filled"
                     sx={{background:"white"}}
+                    color="relaxed"
                 />
             </Grid>
             <Grid item xs={12} sm={12} md={12} display="grid" justifyContent="center">
