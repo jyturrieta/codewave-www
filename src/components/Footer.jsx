@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
 import React from "react";
 import {
   Phone,
@@ -51,17 +51,25 @@ const Footer = () => {
           </Box>
         </Box>
       </Box>
-      <Box sx={{display: "flex", justifyContent:"space-between", alignItems:"center", margin:"1rem"}}>
-        <Box sx={{ display: "flex", justifyContent: "center" }}>
+      <Box sx={{display: "flex", justifyContent:"space-between", alignItems:"center"}}>
+        <Box sx={{ display: "flex", justifyContent: "center", padding:2 }}>
           <Typography variant="body1" align="center">
           © CODEWAVE {getYear()}
           </Typography>
         </Box>
         <Box sx={{ display: "flex", justifyContent: "center"}}>
-          <Facebook sx={{  fontSize: "3rem" }} />
-          <Instagram sx={{ fontSize: "3rem" }} />
-          <Twitter sx={{fontSize: "3rem" }} />
-        <LinkedIn sx={{ fontSize: "3rem" }} />
+          <Button color="black" variant="text" target="_blank" href="https://www.facebook.com/codewavear">
+            <Facebook sx={{fontSize:"3rem"}}/>
+          </Button>
+          <Button color="black"  variant="text" target="_blank" href="https://www.instagram.com/codewavear/">
+            <Instagram sx={{fontSize:"3rem"}}/>
+          </Button>
+          <Button color="black" variant="text" target="_blank" href="https://twitter.com/codewavear">
+            <Twitter sx={{fontSize:"3rem"}}/>
+          </Button>
+          <Button color="black" variant="text" target="_blank" href="">
+            <LinkedIn sx={{fontSize:"3rem"}}/>
+          </Button>
         </Box>
       </Box>
     </>
