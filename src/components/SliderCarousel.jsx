@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import imagen1 from "../assets/1.jpg";
 import imagen2 from "../assets/2.png";
 import imagen3 from "../assets/3.jpeg"
@@ -33,7 +33,7 @@ const SliderCarousel = () => {
 
     return (
         <>
-        <Box bgcolor="primary.main">
+        <Box bgcolor="primary.main" id="carousel">
             <Carousel
             autoPlay={true}
             stopAutoPlayOnHover={true}

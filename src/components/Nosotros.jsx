@@ -4,7 +4,7 @@ import { Box, Typography } from "@mui/material";
 
 export default function Nosotros() {
   return(
-    <Box p={2} bgcolor="primary.main" sx={{display:"flex", justifyContent: "center", flexDirection:"column"}}>
+      <Box id="nosotros" p={2} bgcolor="primary.main" sx={{display:"flex", justifyContent: "center", flexDirection:"column"}}>
         <Box>
           <Typography variant="h4" align="center" color="white.main">
             NOSOTROS

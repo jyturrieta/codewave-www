@@ -2,7 +2,6 @@ import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
@@ -10,8 +9,6 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import logo from "../assets/logo.png";
 
-
-const pages = ['Inicio', 'Nosotros', 'Servicios', 'Portfolio', 'Contacto'];
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -51,11 +48,21 @@ function Header() {
             </Box>
 
             <Box mt={5}>
-              <Button variant="text" color="white"> Inicio </Button>
-              <Button variant="text" color="white"> Nosotros </Button>
-              <Button variant="text" color="white"> Servicios </Button>
-              <Button variant="text" color="white"> Portfolio </Button>
-              <Button variant="text" color="white"> Contacto </Button>
+              <a href="/#carousel">
+                <Button variant="text" color="white"> Inicio </Button>
+              </a>
+              <a href="/#nosotros">
+                <Button variant="text" color="white"> Nosotros </Button>
+              </a>
+              <a href="/#servicios">
+                <Button variant="text" color="white"> Servicios </Button>
+              </a>
+              <a href="/#portfolio">
+                <Button variant="text" color="white"> Portfolio </Button>
+              </a>
+              <a href="/#contacto">
+                <Button variant="text" color="white"> Contacto </Button>
+              </a>
             </Box>
           </Box>
 
@@ -78,11 +85,21 @@ function Header() {
                 open={Boolean(anchorElNav)}
                 onClose={handleCloseNavMenu}
               >
-                {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{page}</Typography>
-                  </MenuItem>
-                ))}
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <a style={{textDecoration:"none", color:"black"}} href="/#carousel"> Inicio </a>
+                </MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <a style={{textDecoration:"none", color:"black"}} href="/#nostros"> Nosotros </a>
+                </MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <a style={{textDecoration:"none", color:"black"}} href="/#servicios"> Servicios </a>
+                </MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <a style={{textDecoration:"none", color:"black"}} href="/#portfolio"> Portfolio </a>
+                </MenuItem>
+                <MenuItem onClick={handleCloseNavMenu}>
+                  <a style={{textDecoration:"none", color:"black"}} href="/#contacto"> Contacto </a>
+                </MenuItem>
               </Menu>
           </Box>
          
