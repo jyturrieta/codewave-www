@@ -52,7 +52,7 @@ const Footer = () => {
         </Box>
       </Box>
       <Box sx={{display: "flex", justifyContent:"space-between", alignItems:"center"}}>
-        <Box sx={{ display: "flex", justifyContent: "center", padding:2 }}>
+        <Box sx={{ display: "flex", justifyContent: "center", padding:"2" }}>
           <Typography variant="body1" align="center">
           © CODEWAVE {getYear()}
           </Typography>
