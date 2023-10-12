@@ -3,8 +3,9 @@ import { Box } from "@mui/material";
 import Footer from "./components/Footer";
 import Nosotros from "./components/Nosotros";
 import Header from "./components/Header";
-import ContactForm from "./components/ContactForm.jsx"
+import ContactForm from "./components/ContactForm"
 import SliderCarousel from "./components/SliderCarousel";
+import Servicios from "./components/Servicios"
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Header/>
         <SliderCarousel/>
         <Nosotros />
+        <Servicios/>
         <ContactForm/>
         <Footer/>
         
