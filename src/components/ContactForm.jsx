@@ -19,18 +19,16 @@ export default function ContactForm() {
     <>
     <Box id="contacto" bgcolor="primary.main">
       <Box sx={{display:"flex", justifyContent: "center", flexDirection:"column"}}>
-        <Box>
+        <Box sx={{padding:"2rem"}}>
           <Typography variant="h4" align="center" color="white.main">
             CONTÁCTANOS
           </Typography>
-        </Box>
-        <Box>
           <Typography variant="h6" align="center" color="white.main">
             Responderemos sus consultas a la brevedad
           </Typography>
         </Box>
       </Box>
-      <Box display="grid" justifyContent="center" mt="1rem" >
+      <Box display="grid" justifyContent="center"  >
         <Grid sx={{maxWidth:"md"}} container spacing={2} >
             <Grid item xs={12} sm={6} md={6}>
                 <TextField
