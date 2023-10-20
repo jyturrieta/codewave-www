@@ -13,7 +13,7 @@ const Servicios = () => {
                     NUESTROS SERVICIOS
                 </Typography>
             </Box>
-            <Box display="grid" justifyContent="center">
+            <Box display="grid" justifyContent="center" sx={{margin:"1rem"}}>
                 <Grid container spacing={2} maxWidth={'md'} >
                     <Grid item xs={12} sm={6} md={6}>
                         <Box display="flex" justifyContent="center" flexDirection="row" alignItems="center">
