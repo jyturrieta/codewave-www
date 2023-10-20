@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import ContactForm from "./components/ContactForm"
 import SliderCarousel from "./components/SliderCarousel";
 import Servicios from "./components/Servicios"
+import Portfolio from "./components/Portfolio"
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <SliderCarousel/>
         <Nosotros />
         <Servicios/>
+        <Portfolio/>
         <ContactForm/>
         <Footer/>
         
