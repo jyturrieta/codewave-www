@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Box,
+  Button,
   Card,
   CardActionArea,
   CardActions,
@@ -42,7 +43,13 @@ function Item(props) {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
           quibusdam.
         </Typography>
+        
       </CardContent>
+      <CardActions sx={{display:"flex", justifyContent:"center"}}>
+        <Button size="small" color="white">
+          Ver más
+        </Button>
+      </CardActions>
     </Card>
   );
 }
@@ -72,11 +79,11 @@ const Portfolio = () => {
         </Box>
         <Box sx={{ padding: "2rem" }}>
           <Carousel
-            autoPlay={false}
+            autoPlay={true}
             animation="slide"
             indicators={true}
             navButtonsAlwaysVisible={true}
-          
+            
           >
             <Item image={depatas} />
             <Item image={depatas} />
