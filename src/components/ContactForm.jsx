@@ -17,7 +17,7 @@ export default function ContactForm() {
 
   return (
     <>
-    <Box id="contacto" bgcolor="primary.main">
+    <Box id="contacto" bgcolor="primary.dark">
       <Box sx={{display:"flex", justifyContent: "center", flexDirection:"column"}}>
         <Box sx={{padding:"2rem"}}>
           <Typography variant="h4" align="center" color="white.main">

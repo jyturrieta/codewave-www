@@ -7,7 +7,7 @@ const Servicios = () => {
 
   return (
     <>
-        <Box id="servicios"  bgcolor="primary.main" sx={{padding:"1rem"}}>
+        <Box id="servicios"  bgcolor="primary.dark" sx={{padding:"1rem"}}>
             <Box>
                 <Typography variant="h4" align="center" color="white.main" sx={{padding:"1rem"}}  >
                     NUESTROS SERVICIOS

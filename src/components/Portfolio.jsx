@@ -9,13 +9,56 @@ import {
   Typography,
 } from "@mui/material";
 import depatas from "../assets/depatas.png";
+import Carousel from "react-material-ui-carousel";
+
+
+function Item(props) {
+  return (
+    <Card sx={{ maxWidth: 345, margin: "auto", backgroundColor: "primary.main" }}>
+      <Box sx={{ display: "flex", justifyContent: "center" }}>
+        <CardMedia
+          component="img"
+          image={props.image}
+          sx={{
+            maxWidth: "235px",
+            maxHeight: "235px",
+            height: "235px",
+            width: "235px",
+            borderRadius: "100%",
+          }}
+        />
+      </Box>
+      <CardContent
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          flexDirection: "column",
+        }}
+      >
+        <Typography gutterBottom variant="h5" component="div" color="white.main">
+          Proyecto 1
+        </Typography>
+        <Typography variant="body2" color="white.main">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
+          quibusdam.
+        </Typography>
+      </CardContent>
+    </Card>
+  );
+}
+
 
 const Portfolio = () => {
+
+  
+  
+
+
   return (
     <>
       <Box
         id="portfolio"
-        bgcolor="primary.dark"
+        bgcolor="primary.main"
         sx={{
           display: "flex",
           justifyContent: "center",
@@ -27,36 +70,22 @@ const Portfolio = () => {
             PORTFOLIO
           </Typography>
         </Box>
-        <Card sx={{ maxWidth: 345, margin: "auto", backgroundColor: "primary.dark"}}>
-            <Box sx={{display:"flex", justifyContent:"center"}}>
-          <CardMedia
-            component="img"
-            image={depatas}
-            sx={{
-              maxWidth: "235px",
-              maxHeight: "235px",
-              height: "235px",
-              width: "235px",
-              borderRadius: "100%",
-            }}
-          />
-            </Box>
-          <CardContent
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-              flexDirection: "column",
-            }}
+        <Box sx={{ padding: "2rem" }}>
+          <Carousel
+            autoPlay={false}
+            animation="slide"
+            indicators={true}
+            navButtonsAlwaysVisible={true}
+          
           >
-            <Typography gutterBottom variant="h5" component="div" color="white.main">
-              Proyecto 1
-            </Typography>
-            <Typography variant="body2" color="white.main">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
-              quibusdam.
-            </Typography>
-          </CardContent>
-        </Card>
+            <Item image={depatas} />
+            <Item image={depatas} />
+            <Item image={depatas} />
+            <Item image={depatas} />
+            <Item image={depatas} />
+            <Item image={depatas} />
+          </Carousel>
+          </Box>
       </Box>
     </>
   );
