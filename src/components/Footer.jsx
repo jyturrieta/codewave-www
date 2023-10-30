@@ -31,7 +31,7 @@ const Footer = () => {
             <Box sx={{paddingBottom:2, display: "flex", alignItems: "center", flexDirection:{xs:"column", sm:"column", md:"row"} }}>
               <Email sx={{ color: "white.main", fontSize: "3rem" }} />
               <Typography  variant="h6" align="center" color="white.main" sx={{paddingLeft:{sm:"0.5rem"}}}>
-                CODEWAVE@CODEWAVE.COM.AR
+                CODEWAVE@UNAHUR.EDU.AR
               </Typography>
             </Box>
             <Box sx={{paddingBottom:2, display: "flex", alignItems: "center", flexDirection:{xs:"column", sm:"column", md:"row"} }}>
@@ -45,7 +45,7 @@ const Footer = () => {
               <Place sx={{ color: "white.main", fontSize: "3rem" }} />
               <Typography  variant="h6" align="center" color="white.main" sx={{paddingLeft:{sm:"0.5rem"}}}>
                 
-                ORIGONE 151, HURLINGHAM
+                AUSEBIONE 8, HURLINGHAM
               </Typography>
             </Box>
           </Box>
