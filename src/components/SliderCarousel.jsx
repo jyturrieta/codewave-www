@@ -1,7 +1,8 @@
 import React from 'react';
-import imagen1 from "../assets/1.jpg";
-import imagen2 from "../assets/2.png";
-import imagen3 from "../assets/3.jpeg"
+import imagen1 from "../assets/IMG_1.jpg";
+import imagen2 from "../assets/IMG_2.jpg";
+import imagen3 from "../assets/IMG_3.jpg"
+import imagen4 from "../assets/IMG_4.jpg"
 import Carousel from 'react-material-ui-carousel';
 import { Box } from '@mui/material';
 
@@ -18,13 +19,17 @@ const items = [
     {
         img: imagen3,
         alt: "imagen3"
+    },
+    {
+        img: imagen4,
+        alt: "imagen4"
     }
 ]
 
 function Item(props)
 {
     return (
-            <Box component="img" src={props.item.img} alt={props.item.alt} sx={{width:"100%", height:"240px"}} />
+            <Box component="img" src={props.item.img} alt={props.item.alt} sx={{width:"100%", height:{xs:"240px", sm:"600px"}}} />
     )
 }
 
