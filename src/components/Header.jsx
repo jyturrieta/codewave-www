@@ -60,6 +60,9 @@ function Header() {
               <a href="/#portfolio">
                 <Button variant="text" color="white"> Portfolio </Button>
               </a>
+              <a href="/#casosDeExito">
+                <Button variant="text" color="white"> Casos de éxito </Button>
+              </a>
               <a href="/#contacto">
                 <Button variant="text" color="white"> Contacto </Button>
               </a>
