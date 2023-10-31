@@ -1,6 +1,13 @@
 import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
 import SecurityIcon from '@mui/icons-material/Security';
+import CodeIcon from '@mui/icons-material/Code';
+import WebIcon from '@mui/icons-material/Web';
+import SupportAgentIcon from '@mui/icons-material/SupportAgent';
+import SettingsIcon from '@mui/icons-material/Settings';
+import MemoryIcon from '@mui/icons-material/Memory';
+import DevicesIcon from '@mui/icons-material/Devices';
+import ScreenSearchDesktopIcon from '@mui/icons-material/ScreenSearchDesktop';
 
 
 const Servicios = () => {
@@ -18,11 +25,11 @@ const Servicios = () => {
                     <Grid item xs={12} sm={6} md={6}>
                         <Box display="flex" justifyContent="center" flexDirection="row" alignItems="center">
                             <Box>
-                                <SecurityIcon  color="white"/>
+                                <CodeIcon color="white" sx={{fontSize:"3rem"}}/>
                             </Box>
                             <Box>
                                 <Typography variant="h6" color="white.main">
-                                    Seguridad
+                                    Desarrollo a medida
                                 </Typography>
                             </Box>
                         </Box>
@@ -30,11 +37,11 @@ const Servicios = () => {
                     <Grid item xs={12} sm={6} md={6}>
                         <Box display="flex" justifyContent="center" flexDirection="row" alignItems="center">
                             <Box>
-                                <SecurityIcon  color="white"/>
+                                <WebIcon color="white" sx={{fontSize:"3rem"}}  />
                             </Box>
                             <Box>
                                 <Typography variant="h6" color="white.main">
-                                    Seguridad
+                                    Desarrollo web y mobile
                                 </Typography>
                             </Box>
                         
@@ -43,11 +50,11 @@ const Servicios = () => {
                     <Grid item xs={12} sm={6} md={6}>
                         <Box display="flex" justifyContent="center" flexDirection="row" alignItems="center">
                             <Box>
-                                <SecurityIcon  color="white"/>
+                                <ScreenSearchDesktopIcon color="white" sx={{fontSize:"3rem"}} />
                             </Box>
                             <Box>
                                 <Typography variant="h6" color="white.main">
-                                    Seguridad
+                                    Product discovery
                                 </Typography>
                             </Box>
                         
@@ -56,11 +63,11 @@ const Servicios = () => {
                     <Grid item xs={12} sm={6} md={6}>
                         <Box display="flex" justifyContent="center" flexDirection="row" alignItems="center">
                             <Box>
-                                <SecurityIcon  color="white"/>
+                                <MemoryIcon color="white" sx={{fontSize:"3rem"}} />
                             </Box>
                             <Box>
                                 <Typography variant="h6" color="white.main">
-                                    Seguridad
+                                    Inteligencia artificial
                                 </Typography>
                             </Box>
                         
@@ -69,11 +76,11 @@ const Servicios = () => {
                     <Grid item xs={12} sm={6} md={6}>
                         <Box display="flex" justifyContent="center" flexDirection="row" alignItems="center">
                             <Box>
-                                <SecurityIcon  color="white"/>
+                                <SecurityIcon  color="white" sx={{fontSize:"3rem"}}/>
                             </Box>
                             <Box>
                                 <Typography variant="h6" color="white.main">
-                                    Seguridad
+                                    Ciberseguridad
                                 </Typography>
                             </Box>
                         
@@ -82,11 +89,11 @@ const Servicios = () => {
                     <Grid item xs={12} sm={6} md={6}>
                         <Box display="flex" justifyContent="center" flexDirection="row" alignItems="center">
                             <Box>
-                                <SecurityIcon  color="white"/>
+                                <SettingsIcon color="white" sx={{fontSize:"3rem"}}/>
                             </Box>
                             <Box>
                                 <Typography variant="h6" color="white.main">
-                                    Seguridad
+                                    Desarrollo ágil
                                 </Typography>
                             </Box>
                         
@@ -95,11 +102,11 @@ const Servicios = () => {
                     <Grid item xs={12} sm={6} md={6}>
                         <Box display="flex" justifyContent="center" flexDirection="row" alignItems="center">
                             <Box>
-                                <SecurityIcon  color="white"/>
+                                <DevicesIcon color="white" sx={{fontSize:"3rem"}} />
                             </Box>
                             <Box>
                                 <Typography variant="h6" color="white.main">
-                                    Seguridad
+                                    Empoderameniento digital
                                 </Typography>
                             </Box>
                         
@@ -108,40 +115,17 @@ const Servicios = () => {
                     <Grid item xs={12} sm={6} md={6}>
                         <Box display="flex" justifyContent="center" flexDirection="row" alignItems="center">
                             <Box>
-                                <SecurityIcon  color="white"/>
+                                <SupportAgentIcon color="white" sx={{fontSize:"3rem"}}/>
                             </Box>
                             <Box>
                                 <Typography variant="h6" color="white.main">
-                                    Seguridad
+                                    Soporte constante
                                 </Typography>
                             </Box>
                         
                         </Box>
                     </Grid>
-                    <Grid item xs={12} sm={6} md={6}>
-                        <Box display="flex" justifyContent="center" flexDirection="row" alignItems="center">
-                            <Box>
-                                <SecurityIcon  color="white"/>
-                            </Box>
-                            <Box>
-                                <Typography variant="h6" color="white.main">
-                                    Seguridad
-                                </Typography>
-                            </Box>
-                        
-                        </Box>
-                    </Grid><Grid item xs={12} sm={6} md={6}>
-                        <Box display="flex" justifyContent="center" flexDirection="row" alignItems="center">
-                            <Box>
-                                <SecurityIcon  color="white"/>
-                            </Box>
-                            <Box>
-                                <Typography variant="h6" color="white.main">
-                                    Seguridad
-                                </Typography>
-                            </Box>
-                        </Box>
-                    </Grid>
+                    
                 </Grid>
             </Box>
         </Box>
