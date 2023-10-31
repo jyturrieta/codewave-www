@@ -7,6 +7,7 @@ import ContactForm from "./components/ContactForm"
 import SliderCarousel from "./components/SliderCarousel";
 import Servicios from "./components/Servicios"
 import Portfolio from "./components/Portfolio"
+import CasosDeExito from "./components/CasosDeExito";
 
 function App() {
   return (
