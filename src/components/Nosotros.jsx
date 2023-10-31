@@ -4,7 +4,7 @@ import { Box, Typography } from "@mui/material";
 
 export default function Nosotros() {
   return(
-      <Box id="nosotros"  bgcolor="primary.main" sx={{display:"flex", justifyContent: "center", flexDirection:"column"}}>
+      <Box id="nosotros"  bgcolor="primary.main" sx={{display:"flex", justifyContent: "center", flexDirection:"column", padding: "2rem"}}>
         <Box sx={{padding:"2rem"}}>
           <Typography variant="h4" align="center" color="white.main">
             NOSOTROS
@@ -12,10 +12,12 @@ export default function Nosotros() {
         </Box>
         <Box sx={{padding:"2rem"}} >
           <Typography variant="h6" align="center" color="white.main">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-          sunt in culpa qui officia deserunt mollit anim id est laborum
+            La Universidad Nacional de Hurlingham tomó la iniciativa de dar vida a Codewave, una Empresa de base tecnológica con un doble propósito: 
+            por un lado, explorar, identificar y solucioar los desafíos de las PYMEs, impuslando su transformación digital y elevando su competitividad en la
+            economía actual y, por otro, asegurar la continuidad y crecimiento profesional de sus alumnos.
+          </Typography>
+          <Typography variant="h6" align="center" color="white.main">
+            Codewave va mas allá de una simple compañia de desarrollo de software, simboliza nuestr ocompromiso colectivo con el corazon de nuestra economía.
           </Typography>
         </Box>
       </Box>
