@@ -9,7 +9,7 @@ import {
   LinkedIn,
   Place
 } from "@mui/icons-material";
-import logoBlanco from "../assets/codewaveBlanco.png";
+import logoBlanco from "../../assets/codewaveBlanco.png";
 
 function getYear() {
     return new Date().getFullYear();

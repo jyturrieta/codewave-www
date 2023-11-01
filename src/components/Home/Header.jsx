@@ -7,7 +7,8 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import logo from "../assets/logo.png";
+import logo from "../../assets/logo.png";
+import { Link } from 'react-router-dom';
 
 
 function Header() {
@@ -51,9 +52,9 @@ function Header() {
               <a href="/#carousel">
                 <Button variant="text" color="white"> Inicio </Button>
               </a>
-              <a href="/#nosotros">
+              <Link to="/nosotros">
                 <Button variant="text" color="white"> Nosotros </Button>
-              </a>
+              </Link>
               <a href="/#servicios">
                 <Button variant="text" color="white"> Servicios </Button>
               </a>

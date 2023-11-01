@@ -1,8 +1,8 @@
 import React from 'react';
-import imagen1 from "../assets/IMG_1.jpg";
-import imagen2 from "../assets/IMG_2.jpg";
-import imagen3 from "../assets/IMG_3.jpg"
-import imagen4 from "../assets/IMG_4.jpg"
+import imagen1 from "../../assets/IMG_1.jpg";
+import imagen2 from "../../assets/IMG_2.jpg";
+import imagen3 from "../../assets/IMG_3.jpg"
+import imagen4 from "../../assets/IMG_4.jpg"
 import Carousel from 'react-material-ui-carousel';
 import { Box } from '@mui/material';
 

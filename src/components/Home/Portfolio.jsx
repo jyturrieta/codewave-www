@@ -9,7 +9,7 @@ import {
   CardMedia,
   Typography,
 } from "@mui/material";
-import depatas from "../assets/depatas.png";
+import depatas from "../../assets/depatas.png";
 import Carousel from "react-material-ui-carousel";
 
 
