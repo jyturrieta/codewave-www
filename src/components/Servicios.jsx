@@ -133,6 +133,4 @@ const Servicios = () => {
   );
 }
 
-export default Servicios
-
-export default Servicios
+export default Servicios;

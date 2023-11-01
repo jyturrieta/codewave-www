@@ -60,4 +60,3 @@ const SliderCarousel = () => {
 
 export default SliderCarousel;
 
-export default SliderCarousel;
