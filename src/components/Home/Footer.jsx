@@ -33,25 +33,17 @@ const Footer = () => {
                 }}
             >
               <Box
-                  component='img'
-                  sx={{
-                    margin:{left:'1rem'},
-                    maxWidth:{xs:'95%', sm:'40%'},
-                    height:'auto'
-                  }}
-                  src={logoBlanco}
-                  alt='logoBlanco'
-              />
-              <Box
-                  component='img'
-                  sx={{
-                    margin:'1rem',
-                    maxWidth:{xs:'50%'},
-                    sm:'30%',
-                    height:'auto'}}
-                  src={logoUnahur}
-                  alt='logo_unahur'
-              />
+            component="img"
+            sx={{ margin: "1rem", maxWidth:{xs:"70%", sm:"30%"}, height: "auto" }}
+            src={logoBlanco}
+            alt="logoBlanco"
+          />
+           <Box
+            component="img"
+            sx={{ margin: "1rem", maxWidth:{xs:"70%", sm:"30%"}, height: "auto" }}
+            src={logoUnahur}
+            alt="logoUnahur"
+          />
 
 
             </Box>
