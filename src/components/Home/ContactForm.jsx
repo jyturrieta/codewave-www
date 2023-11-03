@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, TextField, Typography } from "@mui/material";
+import { Box, FormControl, TextField, Typography } from "@mui/material";
 import { Grid } from "@mui/material";
 import { Button } from "@mui/material";
 import { useState } from "react";
@@ -12,7 +12,8 @@ export default function ContactForm() {
   const [mensaje, setMensaje] = useState("");
 
   const handleSubmit = () => {
-    // Enviar el formulario
+    
+
   };
 
   return (
@@ -29,8 +30,10 @@ export default function ContactForm() {
         </Box>
       </Box>
       <Box display="grid" justifyContent="center"  >
+      <form>
         <Grid sx={{maxWidth:"md"}} container spacing={2} >
             <Grid item xs={12} sm={6} md={6}>
+              
                 <TextField
                  label="Nombre"
                     variant="filled"
@@ -106,8 +109,11 @@ export default function ContactForm() {
                     size="large"
                     sx={{marginBottom:4}}
                 >Enviar</Button>
+                
             </Grid>
+            
           </Grid>
+          </form>
         </Box>
       </Box>
     </>
