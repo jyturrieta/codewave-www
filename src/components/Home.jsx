@@ -2,7 +2,7 @@ import React from 'react'
 import { Box } from "@mui/material";
 import Footer from "./Home/Footer";
 import Header from "./Home/Header";
-import ContactForm from "./Home/ContactForm"
+import ContactForm from "./Form/ContactForm"
 import SliderCarousel from "./Home/SliderCarousel";
 import Servicios from "./Home/Servicios"
 import Portfolio from "./Home/Portfolio"
