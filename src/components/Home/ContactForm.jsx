@@ -2,32 +2,19 @@ import React from "react";
 import { Box, FormControl, TextField, Typography } from "@mui/material";
 import { Grid } from "@mui/material";
 import { Button } from "@mui/material";
-import { useFormik } from 'formik'
-import * as Yup from 'yup'
+import { useState } from "react";
+
 export default function ContactForm() {
-    let initialValue = {
-        nombre :'',
-        empresa: '',
-        email:'',
-        telfono: '',
-        mensaje: '',
-    }
+  const [nombre, setNombre] = useState("");
+  const [empresa, setEmpresa] = useState("");
+  const [email, setEmail] = useState("");
+  const [telefono, setTelefono] = useState("");
+  const [mensaje, setMensaje] = useState("");
 
-    const validationSchema = Yup.object({
-        nombre: Yup.string().required('Ingrese su nombre'),
-        empresa: Yup.string().required('Ingrese el nombre de la empresa'),
-        email: Yup.string().required('Ingrese su emial'),
-        telefono: Yup.string().required('Ingrese su numero de telefono')
-    })
+  const handleSubmit = () => {
+    
 
-    const {handleSubmit, handleChange, values, setFieldValue,errors} = useFornik({
-        initialValue,
-        validationSchema,
-        onSubmit: (data) => {
-            console.log(data)
-        }
-    })
-
+  };
 
   return (
     <>
@@ -43,7 +30,7 @@ export default function ContactForm() {
         </Box>
       </Box>
       <Box display="grid" justifyContent="center"  >
-      <form className='form-container' onSubmit={handleSubmit}>
+      <form>
         <Grid sx={{maxWidth:"md"}} container spacing={2} >
             <Grid item xs={12} sm={6} md={6}>
               
@@ -52,12 +39,9 @@ export default function ContactForm() {
                     variant="filled"
                     fullWidth
                     type="text"
-                    value={values.nombre}
-                    onChange={(e) => {
-                         setFieldValue("nombre", e.target.value);
-                    }}
-                    helperText={errors.nombre}
-                    error={errors.nombre}
+                    value={nombre}
+                    onChange={(e) => setNombre(e.target.value)}
+                    required
                     color="relaxed"
                     sx={{background:"white"}}
                 />
@@ -68,12 +52,9 @@ export default function ContactForm() {
                     variant="filled"
                     fullWidth
                     type="text"
-                    value={values.empresa}
-                    onChange={(e) => {
-                     setFieldValue("empresa", e.target.value);
-                    }}
-                    helperText={errors.empresa}
-                    error={errors.empresa}
+                    value={empresa}
+                    onChange={(e) => setEmpresa(e.target.value)}
+                    required
                     color="relaxed"
                     sx={{background:"white"}}
                 />
@@ -84,12 +65,9 @@ export default function ContactForm() {
                     variant="filled"
                     fullWidth
                     type="email"
-                    value={values.email}
-                    onChange={(e) => {
-                     setFieldValue("email", e.target.value);
-                        }}
-                    helperText={errors.email}
-                    error={errors.email}
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
                     color="relaxed"
                     sx={{background:"white"}}
                 />
@@ -100,12 +78,8 @@ export default function ContactForm() {
                     variant="filled"
                     fullWidth
                     type="text"
-                    value={values.telefono}
-                    onChange={(e) => {
-                        setFieldValue("telefono", e.target.value);
-                    }}
-                    helperText={errors.telefono}
-                    error={errors.telefono}
+                    value={telefono}
+                    onChange={(e) => setTelefono(e.target.value)}
                     sx={{background:"white"}}
                     color="relaxed"
                 />
@@ -116,12 +90,10 @@ export default function ContactForm() {
                     rows={4}
                     fullWidth
                     type="text"
-                    value={values.mensaje}
-                    onChange={(e) => {
-                        setFieldValue("mensaje", e.target.value);
-                    }}
-                    helperText={errors.mensaje}
+                    value={mensaje}
+                    onChange={(e) => setMensaje(e.target.value)}
                     multiline
+                    required
                     variant="filled"
                     sx={{background:"white"}}
                     color="relaxed"
@@ -137,7 +109,9 @@ export default function ContactForm() {
                     size="large"
                     sx={{marginBottom:4}}
                 >Enviar</Button>
+                
             </Grid>
+            
           </Grid>
           </form>
         </Box>
