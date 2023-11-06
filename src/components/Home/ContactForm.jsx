@@ -3,6 +3,8 @@ import { Box, FormControl, TextField, Typography } from "@mui/material";
 import { Grid } from "@mui/material";
 import { Button } from "@mui/material";
 import { useState } from "react";
+import Swal from "sweetalert2";
+import axios from "axios";
 
 export default function ContactForm() {
   const [nombre, setNombre] = useState("");
@@ -11,10 +13,34 @@ export default function ContactForm() {
   const [telefono, setTelefono] = useState("");
   const [mensaje, setMensaje] = useState("");
 
-  const handleSubmit = () => {
-    
 
-  };
+  function enviarFormulario(e) {
+    e.preventDefault();
+    axios.post("https://api.web3forms.com/submit", {
+      apikey: "24295de6-d22f-4215-adc3-0114cc259d0c",
+      name: nombre,
+      empresa: empresa,
+      email: email,
+      telefono: telefono,
+      mensaje: mensaje,
+    })
+    .then(async (response) => {
+      console.log(response);
+      await Swal.fire({
+        title:"su mensaje ha sido enviado",
+        text:"Nos pondremos en contacto a la brevedad",
+        icon:"success",
+        confirmButtonText:"Aceptar",
+        confirmButtonColor:"#000"
+      })
+    }
+    )
+    .catch((error) => {
+      console.log(error);
+    });
+  }
+
+ 
 
   return (
     <>
@@ -30,7 +56,8 @@ export default function ContactForm() {
         </Box>
       </Box>
       <Box display="grid" justifyContent="center"  >
-      <form>
+      <form >
+        <input type="hidden" name="access_key" value="24295de6-d22f-4215-adc3-0114cc259d0c"></input>
         <Grid sx={{maxWidth:"md"}} container spacing={2} >
             <Grid item xs={12} sm={6} md={6}>
               
@@ -39,6 +66,7 @@ export default function ContactForm() {
                     variant="filled"
                     fullWidth
                     type="text"
+                    name="nombre"
                     value={nombre}
                     onChange={(e) => setNombre(e.target.value)}
                     required
@@ -52,6 +80,7 @@ export default function ContactForm() {
                     variant="filled"
                     fullWidth
                     type="text"
+                    name="empresa"
                     value={empresa}
                     onChange={(e) => setEmpresa(e.target.value)}
                     required
@@ -65,6 +94,7 @@ export default function ContactForm() {
                     variant="filled"
                     fullWidth
                     type="email"
+                    name="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
@@ -78,6 +108,7 @@ export default function ContactForm() {
                     variant="filled"
                     fullWidth
                     type="text"
+                    name="telefono"
                     value={telefono}
                     onChange={(e) => setTelefono(e.target.value)}
                     sx={{background:"white"}}
@@ -90,6 +121,7 @@ export default function ContactForm() {
                     rows={4}
                     fullWidth
                     type="text"
+                    name="mensaje"
                     value={mensaje}
                     onChange={(e) => setMensaje(e.target.value)}
                     multiline
@@ -104,10 +136,11 @@ export default function ContactForm() {
                     type="submit"
                     label="Enviar"
                     color="relaxed"
-                    onClick={handleSubmit}
+                    onClick={enviarFormulario}
                     variant="contained"
                     size="large"
                     sx={{marginBottom:4}}
+
                 >Enviar</Button>
                 
             </Grid>
