@@ -12,6 +12,7 @@ export default function ContactForm() {
   const [email, setEmail] = useState("");
   const [telefono, setTelefono] = useState("");
   const [mensaje, setMensaje] = useState("");
+  const form = document.getElementById('contact-form');
 
 
   function enviarFormulario(e) {
@@ -25,19 +26,25 @@ export default function ContactForm() {
       mensaje: mensaje,
     })
     .then(async (response) => {
-      console.log(response);
-      await Swal.fire({
-        title:"su mensaje ha sido enviado",
-        text:"Nos pondremos en contacto a la brevedad",
-        icon:"success",
-        confirmButtonText:"Aceptar",
-        confirmButtonColor:"#000"
-      })
-    }
-    )
+      if (response.status === 200) {
+        await Swal.fire({
+          icon: "success",
+          title: "Mensaje enviado",
+          text: "Gracias por contactarnos, responderemos a la brevedad",
+        });
+        form.reset();
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Error",
+          text: "Ocurrió un error al enviar el mensaje",
+        });
+      }
+    })
     .catch((error) => {
       console.log(error);
     });
+   
   }
 
  
@@ -56,7 +63,7 @@ export default function ContactForm() {
         </Box>
       </Box>
       <Box display="grid" justifyContent="center"  >
-      <form >
+      <form id="contact-form">
         <input type="hidden" name="access_key" value="24295de6-d22f-4215-adc3-0114cc259d0c"></input>
         <Grid sx={{maxWidth:"md"}} container spacing={2} >
             <Grid item xs={12} sm={6} md={6}>
@@ -142,9 +149,7 @@ export default function ContactForm() {
                     sx={{marginBottom:4}}
 
                 >Enviar</Button>
-                
             </Grid>
-            
           </Grid>
           </form>
         </Box>
