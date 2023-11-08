@@ -1,13 +1,13 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
 import {makeStyles} from '@material-ui/core/styles';
+import {Box} from "@mui/material";
+
+import {Item} from "./Portfolio";
 
 import depatas from '../../assets/casosExitos/depatas.png'
 import juuk from '../../assets/casosExitos/juuk.png'
 import nebu from '../../assets/casosExitos/nebu.png'
-import {Box} from "@mui/material";
-import {Item} from "./Portfolio";
-
 
 const useStyles = makeStyles({
     root: {
@@ -25,17 +25,20 @@ export const productos = [
     {
         nombre: 'Depatas',
         imagenUrl: depatas,
-        webUrl: ''
+        webUrl: '',
+        descripcion: 'Inmediata y confiable asistencia virtual de vetarinaria. Servicion rapido y eficiente mejorando la salud de nuestras mascotas'
     },
     {
         nombre: 'Juuk',
         imagenUrl:juuk,
-        webUrl: ''
+        webUrl: '',
+        descripcion: 'Juuk es un plataforma que conecta guia turistico de pesca con pescadodores, lo que permite un proceso de reserva profecional eficiente y profecional'
     },
     {
         nombre: 'Nebu',
         imagenUrl:nebu,
-        webUrl: ''
+        webUrl: '',
+        descripcion: 'Una plataforma de contración donde los candidatos aplican a oportunidades laborales de acuerdo a sus habilidades y experiensia. Optimiza el tiempo del proceso para las empresas y los candidatos potenciando el proceso de contratacón.'
     },
 
 ];
@@ -67,7 +70,7 @@ const CasosDeExito = ({ productos }) => {
                 }}
             >
                 {productos.map((producto, index) => (
-                    <Item key={index} image={producto.imagenUrl} />
+                    <Item key={index} image={producto.imagenUrl} descripcion={producto.descripcion} nombre={producto.nombre} />
                 ))}
             </Box>
         </Box>

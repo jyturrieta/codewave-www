@@ -9,7 +9,7 @@ import {
   CardMedia,
   Typography,
 } from "@mui/material";
-import depatas from "../../assets/depatas.png";
+import depatas from "../../assets/casosExitos/depatas.png";
 import nawaiam from "../../assets/nawaiam.png";
 import ecommerce from "../../assets/ecommerce.png";
 import promogo from "../../assets/promogo.png";
@@ -64,7 +64,7 @@ const productos = [
   },
 ];
 
-function Item(props) {
+export function Item(props) {
   return (
     <Card sx={{ maxWidth: 345, height:"450px", margin: "auto", backgroundColor: "primary.main" }}>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
