@@ -1,10 +1,12 @@
 import React from 'react';
-import { Card, CardActionArea, CardMedia, CardContent, Typography } from '@material-ui/core';
+import { Typography } from '@material-ui/core';
 import {makeStyles} from '@material-ui/core/styles';
 
 import depatas from '../../assets/casosExitos/depatas.png'
 import juuk from '../../assets/casosExitos/juuk.png'
 import nebu from '../../assets/casosExitos/nebu.png'
+import {Box} from "@mui/material";
+import {Item} from "./Portfolio";
 
 
 const useStyles = makeStyles({
@@ -39,27 +41,36 @@ export const productos = [
 ];
 const CasosDeExito = ({ productos }) => {
     const classes = useStyles()
+
     return (
-        <div className= {classes.root}>
-            {productos.map((producto, index) => (
-                <Card key={index}>
-                    <CardActionArea>
-                        <CardMedia
-                            component="img"
-                            alt={producto.nombre}
-                            height="50"
-                            image={producto.imagenUrl}
-                            title={producto.nombre}
-                        />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="div">
-                                {producto.nombre}
-                            </Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-            ))}
-        </div>
+        <Box
+            id="casosExitos"
+            bgcolor="primary.main"
+            sx={{
+                display: "flex",
+                justifyContent: "center",
+                flexDirection: "column",
+            }}
+            className={classes.root}
+        >
+            <Box sx={{ padding: "2rem" }}>
+                <Typography variant="h4" align="center" color="white.main">
+                    CASOS DE ÉXITO
+                </Typography>
+            </Box>
+            <Box
+                sx={{
+                    display: 'flex',
+                    flexWarp: 'wrap',
+                    justifyContent: 'space-around',
+
+                }}
+            >
+                {productos.map((producto, index) => (
+                    <Item key={index} image={producto.imagenUrl} />
+                ))}
+            </Box>
+        </Box>
     );
 };
 

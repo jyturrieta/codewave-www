@@ -12,7 +12,7 @@ import depatas from "../../assets/casosExitos/depatas.png";
 import Carousel from "react-material-ui-carousel";
 
 
-function Item(props) {
+export function Item(props) {
   return (
     <Card sx={{ maxWidth: 345, margin: "auto", backgroundColor: "primary.main" }}>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
