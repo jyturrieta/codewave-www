@@ -23,43 +23,43 @@ const productos = [
   {
     id: 1,
     nombre: "ACRONIS",
-    descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quibusdam.",
+    descripcion: "Solución centralizada de seguridad.",
     imagen: depatas,
   },
   {
     id: 2,
     nombre: "NAWAIAM",
-    descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quibusdam.",
+    descripcion: "Nawaiam es un videojuego disruptivo que genera un perfil conductual basado en las decisiones toadas en el juego.",
     imagen: nawaiam,
   },
   {
     id: 3,
     nombre: "eCommerce",
-    descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quibusdam.",
+    descripcion: "La solución rápida y eficiente para su negocio online.",
     imagen: ecommerce,
   },
   {
     id: 4,
     nombre: "Promo GO",
-    descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quibusdam.",
+    descripcion: "Una herramienta para captar a sus consumidores objetivos en tiempo real, potenciando y maximizanod las eperiencias con su marca y generando un mayor consumo.",
     imagen: promogo,
   },
   {
     id: 5,
     nombre: "Gestor de citas",
-    descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quibusdam.",
+    descripcion: "La solución eficiente para la gestión del servicio al cliente",
     imagen: gestorcitas,
   },
   {
     id: 6,
     nombre: "People Connect",
-    descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quibusdam.",
+    descripcion: "Plataforma digital creada por Líderes en RRHH para Líderes en RRHH.",
     imagen: peopleconnect,
   },
   {
     id: 7,
     nombre: "PES Tool",
-    descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quibusdam.",
+    descripcion: "La herramienta para asegurar una continua exhibición de producto perfecta en el Punto de Venta.",
     imagen: pestool,
   },
 ];
@@ -68,7 +68,7 @@ const productos = [
 
 function Item(props) {
   return (
-    <Card sx={{ maxWidth: 345, margin: "auto", backgroundColor: "primary.main" }}>
+    <Card sx={{ maxWidth: 345, height:"450px", margin: "auto", backgroundColor: "primary.main" }}>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <CardMedia
           component="img"
