@@ -2,7 +2,6 @@ import React from 'react';
 
 import { Typography } from '@mui/material';
 
-import {makeStyles} from '@material-ui/core/styles';
 import {Box} from "@mui/material";
 import {Item} from "./Portfolio";
 
@@ -11,20 +10,6 @@ import depatas from '../../assets/casosExitos/depatas.png'
 import juuk from '../../assets/casosExitos/juuk.png'
 import nebu from '../../assets/casosExitos/nebu.png'
 
-
-const useStyles = makeStyles({
-    root: {
-        display: 'flex',
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-        justifyContent: 'space-around',
-    },
-    title: {
-        fontSize: '14px',
-        textAlign: 'center',
-        color: ''
-    },
-});
 export const productos = [
     {
         nombre: 'Depatas',
@@ -47,7 +32,6 @@ export const productos = [
 
 ];
 const CasosDeExito = ({ productos }) => {
-    const classes = useStyles()
 
     return (
         <Box
@@ -58,7 +42,7 @@ const CasosDeExito = ({ productos }) => {
                 justifyContent: "center",
                 flexDirection: "column",
             }}
-            className={classes.root}
+
         >
             <Box sx={{ padding: "2rem" }}>
 
