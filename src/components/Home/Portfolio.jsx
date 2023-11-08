@@ -3,16 +3,70 @@ import {
   Box,
   Button,
   Card,
+  CardActionArea,
   CardActions,
   CardContent,
   CardMedia,
   Typography,
 } from "@mui/material";
-import depatas from "../../assets/casosExitos/depatas.png";
+import depatas from "../../assets/depatas.png";
+import nawaiam from "../../assets/nawaiam.png";
+import ecommerce from "../../assets/ecommerce.png";
+import promogo from "../../assets/promogo.png";
+import gestorcitas from "../../assets/gestorcitas.png";
+import peopleconnect from "../../assets/peopleconnect.png";
+import pestool from "../../assets/pestool.png";
 import Carousel from "react-material-ui-carousel";
 
 
-export function Item(props) {
+const productos = [
+  {
+    id: 1,
+    nombre: "ACRONIS",
+    descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quibusdam.",
+    imagen: depatas,
+  },
+  {
+    id: 2,
+    nombre: "NAWAIAM",
+    descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quibusdam.",
+    imagen: nawaiam,
+  },
+  {
+    id: 3,
+    nombre: "eCommerce",
+    descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quibusdam.",
+    imagen: ecommerce,
+  },
+  {
+    id: 4,
+    nombre: "Promo GO",
+    descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quibusdam.",
+    imagen: promogo,
+  },
+  {
+    id: 5,
+    nombre: "Gestor de citas",
+    descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quibusdam.",
+    imagen: gestorcitas,
+  },
+  {
+    id: 6,
+    nombre: "People Connect",
+    descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quibusdam.",
+    imagen: peopleconnect,
+  },
+  {
+    id: 7,
+    nombre: "PES Tool",
+    descripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quibusdam.",
+    imagen: pestool,
+  },
+];
+
+
+
+function Item(props) {
   return (
     <Card sx={{ maxWidth: 345, margin: "auto", backgroundColor: "primary.main" }}>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
@@ -36,11 +90,10 @@ export function Item(props) {
         }}
       >
         <Typography gutterBottom variant="h5" component="div" color="white.main">
-          Proyecto 1
+          {props.nombre}
         </Typography>
         <Typography variant="body2" color="white.main">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
-          quibusdam.
+          {props.descripcion}
         </Typography>
         
       </CardContent>
@@ -56,6 +109,10 @@ export function Item(props) {
 
 const Portfolio = () => {
 
+  
+  
+
+
   return (
     <>
       <Box
@@ -69,7 +126,7 @@ const Portfolio = () => {
       >
         <Box sx={{ padding: "2rem" }}>
           <Typography variant="h4" align="center" color="white.main">
-            PORTFOLIO
+            PRODUCTOS
           </Typography>
         </Box>
         <Box sx={{ padding: "2rem" }}>
@@ -80,12 +137,9 @@ const Portfolio = () => {
             navButtonsAlwaysVisible={true}
             
           >
-            <Item image={depatas} />
-            <Item image={depatas} />
-            <Item image={depatas} />
-            <Item image={depatas} />
-            <Item image={depatas} />
-            <Item image={depatas} />
+            {productos.map((item, i) => (
+              <Item key={i} nombre={item.nombre} image={item.imagen} descripcion={item.descripcion}/>
+            ))}
           </Carousel>
           </Box>
       </Box>
