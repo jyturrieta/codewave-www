@@ -6,6 +6,7 @@ import ContactForm from "./Home/ContactForm"
 import SliderCarousel from "./Home/SliderCarousel";
 import Servicios from "./Home/Servicios"
 import Portfolio from "./Home/Portfolio"
+import CasosExitos, {productos} from "./Home/CasosExitos";
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         <SliderCarousel/>
         <Servicios/>
         <Portfolio/>
+        <CasosExitos productos={productos}/>
         <ContactForm/>
         <Footer/> 
       </Box>

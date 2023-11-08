@@ -3,13 +3,12 @@ import {
   Box,
   Button,
   Card,
-  CardActionArea,
   CardActions,
   CardContent,
   CardMedia,
   Typography,
 } from "@mui/material";
-import depatas from "../../assets/depatas.png";
+import depatas from "../../assets/casosExitos/depatas.png";
 import Carousel from "react-material-ui-carousel";
 
 
@@ -56,10 +55,6 @@ function Item(props) {
 
 
 const Portfolio = () => {
-
-  
-  
-
 
   return (
     <>
