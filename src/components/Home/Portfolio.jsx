@@ -64,8 +64,6 @@ const productos = [
   },
 ];
 
-
-
 function Item(props) {
   return (
     <Card sx={{ maxWidth: 345, margin: "auto", backgroundColor: "primary.main" }}>
