@@ -1,5 +1,9 @@
 import React from 'react';
+<<<<<<< HEAD
 import { Typography } from '@mui/material';
+=======
+import { Typography } from '@material-ui/core';
+>>>>>>> 707fac4 (casos de existos mejorado)
 import {makeStyles} from '@material-ui/core/styles';
 import {Box} from "@mui/material";
 
@@ -8,6 +12,8 @@ import {Item} from "./Portfolio";
 import depatas from '../../assets/casosExitos/depatas.png'
 import juuk from '../../assets/casosExitos/juuk.png'
 import nebu from '../../assets/casosExitos/nebu.png'
+import {Box} from "@mui/material";
+import {Item} from "./Portfolio";
 
 const useStyles = makeStyles({
     root: {
@@ -58,10 +64,14 @@ const CasosDeExito = ({ productos }) => {
             className={classes.root}
         >
             <Box sx={{ padding: "2rem" }}>
+<<<<<<< HEAD
                 <Typography
                     variant="h4"
                     align="center"
                     style={{color:'#ffffff'}}>
+=======
+                <Typography variant="h4" align="center" color="white.main">
+>>>>>>> 707fac4 (casos de existos mejorado)
                     CASOS DE ÉXITO
                 </Typography>
             </Box>
@@ -74,7 +84,11 @@ const CasosDeExito = ({ productos }) => {
                 }}
             >
                 {productos.map((producto, index) => (
+<<<<<<< HEAD
                     <Item key={index} image={producto.imagenUrl} descripcion={producto.descripcion} nombre={producto.nombre} />
+=======
+                    <Item key={index} image={producto.imagenUrl} />
+>>>>>>> 707fac4 (casos de existos mejorado)
                 ))}
             </Box>
         </Box>

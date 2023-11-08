@@ -19,6 +19,7 @@ import pestool from "../../assets/pestool.png";
 import Carousel from "react-material-ui-carousel";
 
 
+<<<<<<< HEAD
 const productos = [
   {
     id: 1,
@@ -64,6 +65,8 @@ const productos = [
   },
 ];
 
+=======
+>>>>>>> 707fac4 (casos de existos mejorado)
 export function Item(props) {
   return (
     <Card sx={{ maxWidth: 345, margin: "auto", backgroundColor: "primary.main" }}>
