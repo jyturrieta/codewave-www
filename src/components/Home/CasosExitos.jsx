@@ -19,6 +19,7 @@ const useStyles = makeStyles({
     title: {
         fontSize: '14px',
         textAlign: 'center',
+        color: ''
     },
 });
 export const productos = [
@@ -57,7 +58,10 @@ const CasosDeExito = ({ productos }) => {
             className={classes.root}
         >
             <Box sx={{ padding: "2rem" }}>
-                <Typography variant="h4" align="center" color="white.main">
+                <Typography
+                    variant="h4"
+                    align="center"
+                    style={{color:'#ffffff'}}>
                     CASOS DE ÉXITO
                 </Typography>
             </Box>

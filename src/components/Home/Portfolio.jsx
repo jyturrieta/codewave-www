@@ -66,7 +66,7 @@ const productos = [
 
 export function Item(props) {
   return (
-    <Card sx={{ maxWidth: 345, height:"450px", margin: "auto", backgroundColor: "primary.main" }}>
+    <Card sx={{ maxWidth: 345, margin: "auto", backgroundColor: "primary.main" }}>
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <CardMedia
           component="img"
@@ -82,15 +82,20 @@ export function Item(props) {
       </Box>
       <CardContent
         sx={{
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "column",
+            display: "flex",
+            justifyContent: "center",
+            flexDirection: "column",
+            minHeight: '150px',
+            maxHeight: '150px'
         }}
       >
         <Typography gutterBottom variant="h5" component="div" color="white.main">
           {props.nombre}
         </Typography>
-        <Typography variant="body2" color="white.main">
+        <Typography
+            variant="body2"
+            color="white.main"
+        >
           {props.descripcion}
         </Typography>
         
@@ -106,10 +111,6 @@ export function Item(props) {
 
 
 const Portfolio = () => {
-
-  
-  
-
 
   return (
     <>
