@@ -5,7 +5,7 @@ import Header from "./Home/Header";
 import ContactForm from "./Home/ContactForm"
 import SliderCarousel from "./Home/SliderCarousel";
 import Servicios from "./Home/Servicios"
-import Portfolio from "./Home/Portfolio"
+import Productos from "./Home/Productos"
 import CasosExitos, {productos} from "./Home/CasosExitos";
 
 
@@ -16,7 +16,7 @@ export default function Home() {
         <Header/>
         <SliderCarousel/>
         <Servicios/>
-        <Portfolio/>
+        <Productos/>
         <CasosExitos productos={productos}/>
         <ContactForm/>
         <Footer/> 

@@ -3,7 +3,7 @@ import React from 'react';
 import {Grid, Typography} from '@mui/material';
 
 import {Box} from "@mui/material";
-import {Item} from "./Portfolio";
+import {Item} from "./Productos";
 
 
 import depatas from '../../assets/casosExitos/depatas.png'
@@ -35,7 +35,7 @@ const CasosDeExito = ({ productos }) => {
 
     return (
         <Box
-            id="casosExitos"
+            id="casosDeExito"
             bgcolor="primary.main"
             sx={{
                 display: "flex",
