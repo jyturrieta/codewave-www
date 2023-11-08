@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Typography } from '@mui/material';
+import {Grid, Typography} from '@mui/material';
 
 import {Box} from "@mui/material";
 import {Item} from "./Portfolio";
@@ -53,19 +53,17 @@ const CasosDeExito = ({ productos }) => {
                     CASOS DE ÉXITO
                 </Typography>
             </Box>
-            <Box
-                sx={{
-                    display: 'flex',
-                    flexWarp: 'wrap',
-                    justifyContent: 'space-around',
-
-                }}
+            <Grid
+                container
+                spacing={3}
+                justifyContent='space-around'
             >
                 {productos.map((producto, index) => (
-                    <Item key={index} image={producto.imagenUrl} descripcion={producto.descripcion} nombre={producto.nombre} />
-
+                    <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
+                        <Item image={producto.imagenUrl} descripcion={producto.descripcion} nombre={producto.nombre} />
+                    </Grid>
                 ))}
-            </Box>
+            </Grid>
         </Box>
     );
 };
