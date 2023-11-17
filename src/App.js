@@ -1,27 +1,16 @@
 import React from "react";
-import { Box } from "@mui/material";
-import Footer from "./components/Footer";
+import Home from "./components/Home";
+import { Route, Routes } from "react-router-dom";
 import Nosotros from "./components/Nosotros";
-import Header from "./components/Header";
-import ContactForm from "./components/ContactForm"
-import SliderCarousel from "./components/SliderCarousel";
-import Servicios from "./components/Servicios"
-import Portfolio from "./components/Portfolio"
-import CasosDeExito from "./components/CasosDeExito";
+
 
 function App() {
   return (
     <div className="App">
-      <Box sx={{ color:"secondary"}}>
-        <Header/>
-        <SliderCarousel/>
-        <Nosotros />
-        <Servicios/>
-        <Portfolio/>
-        <ContactForm/>
-        <Footer/>
-        
-      </Box>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/nosotros" element={<Nosotros />} />
+      </Routes>
     </div>
   );
 }

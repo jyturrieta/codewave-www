@@ -1,10 +1,14 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
+import Header from "./Home/Header";
+import Footer from "./Home/Footer";
 
 
 export default function Nosotros() {
   return(
-      <Box id="nosotros"  bgcolor="primary.main" sx={{display:"flex", justifyContent: "center", flexDirection:"column", padding: "2rem"}}>
+    <>
+      <Header/>
+      <Box id="nosotros"  bgcolor="primary.dark" sx={{display:"flex", justifyContent: "center", flexDirection:"column", padding: "2rem"}}>
         <Box sx={{padding:"2rem"}}>
           <Typography variant="h4" align="center" color="white.main">
             NOSOTROS
@@ -21,6 +25,7 @@ export default function Nosotros() {
           </Typography>
         </Box>
       </Box>
+      <Footer/>
+      </>
   )
 }
-
