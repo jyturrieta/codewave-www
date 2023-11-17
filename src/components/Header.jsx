@@ -58,7 +58,7 @@ function Header() {
                 <Button variant="text" color="white"> Servicios </Button>
               </a>
               <a href="/#portfolio">
-                <Button variant="text" color="white"> Portfolio </Button>
+                <Button variant="text" color="white"> Productos </Button>
               </a>
               <a href="/#casosDeExito">
                 <Button variant="text" color="white"> Casos de éxito </Button>
