@@ -1,62 +1,41 @@
-import React from 'react';
-import imagen1 from "../../assets/IMG_1.jpg";
-import imagen2 from "../../assets/IMG_2.jpg";
-import imagen3 from "../../assets/IMG_3.jpg"
-import imagen4 from "../../assets/IMG_4.jpg"
-import Carousel from 'react-material-ui-carousel';
-import { Box } from '@mui/material';
-
+import React from "react";
+import banner1 from "../../assets/banner_1.png";
+import banner2 from "../../assets/banner_2.png";
+import banner3 from "../../assets/banner_3.png";
+import Carousel from "react-bootstrap/Carousel";
 
 const items = [
-    {
-        img: imagen1,
-        alt: "imagen1"
-    },
-    {
-        img: imagen2,
-        alt: "imagen2"
-    },
-    {
-        img: imagen3,
-        alt: "imagen3"
-    },
-    {
-        img: imagen4,
-        alt: "imagen4"
-    }
-]
-
-function Item(props)
-{
-    return (
-            <Box component="img" src={props.item.img} alt={props.item.alt} sx={{width:"100%", height:{xs:"240px", sm:"600px"}}} />
-    )
-}
-
+  {
+    img: banner1,
+    alt: "item1",
+  },
+  {
+    img: banner2,
+    alt: "item2",
+  },
+  {
+    img: banner3,
+    alt: "item3",
+  },
+];
 
 const SliderCarousel = () => {
-
-    return (
-        <>
-        <Box bgcolor="primary.main" id="carousel">
-            <Carousel
-            autoPlay={true}
-            stopAutoPlayOnHover={true}
-            animation="fade"
-            navButtonsAlwaysVisible={true}
-            indicators={true}
-            duration={700}
-            sx={{display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}
-                     
-            >
-                {
-                    items.map( (item, i) => <Item key={i} item={item} /> )
-                }
-            </Carousel>
-        </Box>
-        </>
-    );
-}
+  return (
+    <>
+      <Carousel className="d-flex justify-content-center ">
+        {items.map((item) => (
+          <Carousel.Item key={item.id}>
+              <img
+                className="d-block "
+                src={item.img}
+                style={{ heigth: "auto", width: "100%", objectFit: "cover" }}
+              />
+            
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    </>
+  );
+};
 
 export default SliderCarousel;
-

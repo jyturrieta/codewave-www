@@ -2,6 +2,7 @@ import React from "react";
 import Home from "./components/Home";
 import { Route, Routes } from "react-router-dom";
 import Nosotros from "./components/Nosotros";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
