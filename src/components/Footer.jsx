@@ -19,7 +19,9 @@ function getYear() {
 const Footer = () => {
   return (
     <>
-      <Box bgcolor="grey">
+      <Box sx={{
+        backgroundColor: "#010101"
+      }}>
         <Box sx={{ display: "flex", flexDirection: { xs:"column", sm: "column", md: "row" }, justifyContent:"space-evenly", alignItems:"center" }}>
           <Box
             component="img"
@@ -38,7 +40,7 @@ const Footer = () => {
               <Phone sx={{ color: "white.main", fontSize: "3rem" }} />
               <Typography variant="h6" align="center" color="white.main" sx={{paddingLeft:{sm:"0.5rem"}}}>
                 
-                +54 9 11 1234-5678
+                +54 9 11 1234-56711
               </Typography>
             </Box>
             <Box sx={{paddingBottom:2, display: "flex", alignItems: "center", flexDirection:{xs:"column", sm:"column", md:"row"} }}>
