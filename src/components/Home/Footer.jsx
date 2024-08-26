@@ -11,6 +11,7 @@ import {
 } from "@mui/icons-material";
 import logoBlanco from "../../assets/codewaveBlanco.png";
 import logoUnahur from '../../assets/logo_unahur.png';
+import logoCodewave from '../../assets/logoCodewave.svg';
 
 function getYear() {
   return new Date().getFullYear();
@@ -19,7 +20,10 @@ function getYear() {
 const Footer = () => {
   return (
       <>
-        <Box bgcolor="grey">
+        <Box sx={{
+          backgroundColor: "#f4f4f4",
+          color:"#f4f4f4"
+        }}>
           <Box sx={{
             display: "flex",
             flexDirection: { xs:"column", sm: "row" },
@@ -35,8 +39,8 @@ const Footer = () => {
               <Box
             component="img"
             sx={{ margin: "1rem", maxWidth:{xs:"70%", sm:"30%"}, height: "auto" }}
-            src={logoBlanco}
-            alt="logoBlanco"
+            src={logoCodewave}
+            alt="logoCodewave"
           />
            <Box
             component="img"
@@ -52,23 +56,22 @@ const Footer = () => {
 
             <Box sx={{margin:"2rem", display:"flex", flexDirection:"column"}}>
               <Box sx={{paddingBottom:2, display: "flex", alignItems: "center", flexDirection:{xs:"column", sm:"column", md:"row"} }}>
-                <Email sx={{ color: "white.main", fontSize: "3rem" }} />
-                <Typography  variant="h6" align="center" color="white.main" sx={{paddingLeft:{sm:"0.5rem"}}}>
+                <Email sx={{ color: "#636664", fontSize: "3rem" }} />
+                <Typography  variant="h6" align="center" color="#636664" sx={{paddingLeft:{sm:"0.5rem"}}}>
                   CODEWAVE@UNAHUR.EDU.AR
                 </Typography>
               </Box>
               <Box sx={{paddingBottom:2, display: "flex", alignItems: "center", flexDirection:{xs:"column", sm:"column", md:"row"} }}>
-                <Phone sx={{ color: "white.main", fontSize: "3rem" }} />
-                <Typography variant="h6" align="center" color="white.main" sx={{paddingLeft:{sm:"0.5rem"}}}>
+                <Phone sx={{ color: "#636664", fontSize: "3rem" }} />
+                <Typography variant="h6" align="center" color="#636664" sx={{paddingLeft:{sm:"0.5rem"}}}>
 
                   +54 9 11 1234-5678
                 </Typography>
               </Box>
               <Box sx={{paddingBottom:2, display: "flex", alignItems: "center", flexDirection:{xs:"column", sm:"column", md:"row"} }}>
-                <Place sx={{ color: "white.main", fontSize: "3rem" }} />
-                <Typography  variant="h6" align="center" color="white.main" sx={{paddingLeft:{sm:"0.5rem"}}}>
-
-                  AUSEBIONE 8, HURLINGHAM
+                <Place sx={{ color: "#636664", fontSize: "3rem" }} />
+                <Typography  variant="h6" align="center" color="#636664" sx={{paddingLeft:{sm:"0.5rem"}}}>
+                  Ausebione 8, B1688 Villa Tesei, Provincia de Buenos Aires
                 </Typography>
               </Box>
             </Box>
